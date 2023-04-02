@@ -1,0 +1,1908 @@
+{
+  "custom_audience_properties": [
+    {
+      "is_segment_used": false,
+      "select_value": [
+        {
+          "name": "True",
+          "key": true
+        },
+        {
+          "name": "False",
+          "key": false
+        }
+      ],
+      "display_name": "非体力reward为2次",
+      "field": "reward_nohp_2count",
+      "content_type": "boolean",
+      "attributes": "select_field",
+      "type": "Custom"
+    },
+    {
+      "is_segment_used": false,
+      "select_value": [],
+      "display_name": "day0天看非体力视频的累计次数",
+      "field": "reward_nohp_count",
+      "content_type": "number",
+      "attributes": "string_field",
+      "type": "Custom"
+    },
+    {
+      "is_segment_used": false,
+      "select_value": [
+        {
+          "name": "default",
+          "key": "default"
+        },
+        {
+          "name": "scan",
+          "key": "scan"
+        }
+      ],
+      "display_name": "用户来源",
+      "field": "user_source",
+      "content_type": "string",
+      "attributes": "select_field",
+      "type": "Custom"
+    },
+    {
+      "is_segment_used": true,
+      "select_value": [],
+      "display_name": "主线关卡",
+      "analysedBySegment": true,
+      "field": "main_level",
+      "content_type": "level",
+      "attributes": "string_field",
+      "type": "Custom"
+    }
+  ],
+  "console_url": "https://ap-console.appcloudbox.net",
+  "objects_submit_url": "https://ap-obsersu.appcloudbox.net",
+  "app_events": [
+    {
+      "name": "active"
+    },
+    {
+      "name": "main_app_open"
+    },
+    {
+      "name": "main_app_close"
+    },
+    {
+      "name": "ad_click_native"
+    },
+    {
+      "name": "ad_click_interstitial"
+    },
+    {
+      "name": "ad_click_rewarded_video"
+    },
+    {
+      "name": "ad_click_banner"
+    },
+    {
+      "name": "ad_click_splash"
+    },
+    {
+      "name": "ad_click__native__ge"
+    },
+    {
+      "name": "ad_click__interstitial__ge"
+    },
+    {
+      "name": "ad_click__rewarded_video__ge"
+    },
+    {
+      "name": "ad_click__banner__ge"
+    },
+    {
+      "name": "ad_click__splash__ge"
+    },
+    {
+      "name": "ad_show"
+    },
+    {
+      "name": "ad_show__native__ge"
+    },
+    {
+      "name": "ad_show__interstitial__ge"
+    },
+    {
+      "name": "ad_show__rewarded_video__ge"
+    },
+    {
+      "name": "ad_show__banner__ge"
+    },
+    {
+      "name": "ad_show__splash__ge"
+    },
+    {
+      "name": "ad_show__customized__ge"
+    },
+    {
+      "name": "iap"
+    },
+    {
+      "name": "get_remote_config"
+    },
+    {
+      "name": "game_start"
+    },
+    {
+      "name": "game_win"
+    },
+    {
+      "name": "reward_will_show"
+    },
+    {
+      "name": "reward_did_show"
+    },
+    {
+      "name": "native_will_show"
+    },
+    {
+      "name": "native_did_show"
+    },
+    {
+      "name": "bt_home_dailytask"
+    },
+    {
+      "name": "withdraw_success"
+    },
+    {
+      "name": "game_start_guess"
+    },
+    {
+      "name": "game_win_guess"
+    },
+    {
+      "name": "bt_home_guess"
+    },
+    {
+      "name": "game_hint"
+    },
+    {
+      "name": "game_hint1_guess"
+    },
+    {
+      "name": "game_hint2_guess"
+    },
+    {
+      "name": "bt_home_judge"
+    },
+    {
+      "name": "bt_home_poem"
+    },
+    {
+      "name": "game_win_poem"
+    },
+    {
+      "name": "coins_add"
+    },
+    {
+      "name": "ad_did_show"
+    },
+    {
+      "name": "inters_did_show"
+    },
+    {
+      "name": "pay_actual_rmb"
+    },
+    {
+      "name": "pay_ought_rmb"
+    },
+    {
+      "name": "earings_rmb"
+    },
+    {
+      "name": "cost_rmb"
+    },
+    {
+      "name": "user_earnings_rmb"
+    },
+    {
+      "name": "__user_earnings_rmb"
+    },
+    {
+      "name": "__user_pay_actual_rmb"
+    },
+    {
+      "name": "__user_pay_ought_rmb"
+    },
+    {
+      "name": "__user_cost_rmb"
+    },
+    {
+      "name": "earnings"
+    },
+    {
+      "name": "earnings_rmb"
+    },
+    {
+      "name": "cost"
+    },
+    {
+      "name": "pay_actual"
+    },
+    {
+      "name": "pay_ought"
+    }
+  ],
+  "integration_submit_url": "https://ap-orsersu.atcloudbox.com/integration/autopilot/v5/submit",
+  "user_behavior_app_events": [
+    {
+      "name": "game_win"
+    },
+    {
+      "name": "withdraw_success"
+    },
+    {
+      "name": "coins_add"
+    }
+  ],
+  "occasion_mgt": {
+    "archived_actions": {},
+    "custom_state_properties": [],
+    "actions": {},
+    "triggers": {
+      "unlock_screen": {
+        "trigger_id": "1331"
+      },
+      "session_start": {
+        "trigger_id": "1328"
+      },
+      "stop_charging_inapp": {
+        "trigger_id": "1333"
+      },
+      "homepage_open": {
+        "trigger_id": "1336"
+      },
+      "start_charging_inapp": {
+        "trigger_id": "1332"
+      },
+      "session_end": {
+        "trigger_id": "1329"
+      },
+      "start_charging_bg": {
+        "trigger_id": "1334"
+      },
+      "stop_charging_bg": {
+        "trigger_id": "1335"
+      },
+      "app_exit": {
+        "trigger_id": "1337"
+      },
+      "screen_on": {
+        "trigger_id": "1330"
+      }
+    }
+  },
+  "integration_get_url": "https://ap-orserge.atcloudbox.com/integration/autopilot/v5/get",
+  "autopilot_id": 10155,
+  "app_meta": {
+    "remote_config_get_interval_secs": {
+      "one_time": 3600,
+      "rtot_popup": 3600
+    },
+    "is_support_languages": false,
+    "session_end_delay": 10
+  },
+  "service_url": "https://ap.appcloudbox.net",
+  "other_app_events": [],
+  "autopilot_type": "app",
+  "objects_get_url": "https://ap-obserge.appcloudbox.net",
+  "json_id": "5782b513-5458-4827-9c4a-0b0c4c7d38ca",
+  "autopilot_name": "Mars",
+  "topics": {
+    "topic-7m6x8nr0b": {
+      "topic_type": "life_time",
+      "config_id": "rule-7m6xc29yw",
+      "topic_id": "topic-7m6x8nr0b",
+      "topic_name": "Idiom Push Test",
+      "variations": {
+        "push_group": {
+          "values": [
+            {
+              "value": -1
+            }
+          ],
+          "type": "double",
+          "value": -1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7r4ab3d7s": {
+      "topic_type": "life_time",
+      "config_id": "rule-7r4ads8fm",
+      "topic_id": "topic-7r4ab3d7s",
+      "topic_name": "Golden Egg",
+      "variations": {
+        "golden_egg_group": {
+          "values": [
+            {
+              "value": -1
+            }
+          ],
+          "type": "double",
+          "value": -1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-l-7rbecc6s3": {
+      "topic_type": "local_life_time",
+      "config_id": "rule-7rbeh02fg",
+      "topic_id": "topic-l-7rbecc6s3",
+      "topic_name": "User Login And Splash",
+      "variations": {
+        "login_ui": {
+          "values": [
+            {
+              "value": "old"
+            }
+          ],
+          "type": "string",
+          "value": "old",
+          "strategy": "sole"
+        },
+        "splash_optimize": {
+          "values": [
+            {
+              "value": "old"
+            }
+          ],
+          "type": "string",
+          "value": "old",
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7r49d817r": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rbrj2wci",
+      "topic_id": "topic-7r49d817r",
+      "topic_name": "Guess Lock Test",
+      "variations": {
+        "interstitial_start": {
+          "values": [
+            {
+              "value": -1
+            }
+          ],
+          "type": "double",
+          "value": -1,
+          "strategy": "sole"
+        },
+        "reward_guess_checkpoint": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        },
+        "reward_first_start": {
+          "values": [
+            {
+              "value": 4
+            }
+          ],
+          "type": "double",
+          "value": 4,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7hmqbzhy8": {
+      "topic_type": "life_time",
+      "config_id": "rule-7jj4wnure",
+      "topic_id": "topic-7hmqbzhy8",
+      "topic_name": "Splash Interstitial",
+      "variations": {
+        "splash_toggle": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7op5w8od2": {
+      "topic_type": "life_time",
+      "config_id": "rule-7op5xk6z5",
+      "topic_id": "topic-7op5w8od2",
+      "topic_name": "New User Task",
+      "variations": {
+        "new_user_task_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7ji3jgip6": {
+      "topic_type": "life_time",
+      "config_id": "rule-7lvvhr4hj",
+      "topic_id": "topic-7ji3jgip6",
+      "topic_name": "quiz",
+      "variations": {
+        "quiz_difficulty_add": {
+          "values": [
+            {
+              "value": 3
+            }
+          ],
+          "type": "double",
+          "value": 3,
+          "strategy": "sole"
+        },
+        "quiz_difficulty_reduce": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        },
+        "quiz_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "quiz_difficulty_rule": {
+          "values": [
+            {
+              "value": "8,2,0,0;4,5,1,0;1,6,3,0;0,5,5,0;0,3,7,0;0,2,7,1;0,0,8,2"
+            }
+          ],
+          "type": "string",
+          "value": "8,2,0,0;4,5,1,0;1,6,3,0;0,5,5,0;0,3,7,0;0,2,7,1;0,0,8,2",
+          "strategy": "sole"
+        },
+        "quiz_chances_free": {
+          "values": [
+            {
+              "value": 5
+            }
+          ],
+          "type": "double",
+          "value": 5,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7jxidiqgj": {
+      "topic_type": "life_time",
+      "config_id": "rule-7kqg6yza8",
+      "topic_id": "topic-7jxidiqgj",
+      "topic_name": "Check In Rewards",
+      "variations": {
+        "check_in_new": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7neaq858r": {
+      "topic_type": "life_time",
+      "config_id": "rule-7neb34aaw",
+      "topic_id": "topic-7neaq858r",
+      "topic_name": "NativeClickTest",
+      "variations": {
+        "switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7nqstnhld": {
+      "topic_type": "life_time",
+      "config_id": "rule-7p21lca6s",
+      "topic_id": "topic-7nqstnhld",
+      "topic_name": "Level Up Reward",
+      "variations": {
+        "level_up_reward_type": {
+          "values": [
+            {
+              "value": 2
+            }
+          ],
+          "type": "double",
+          "value": 2,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7hfmabfx7": {
+      "topic_type": "life_time",
+      "config_id": "rule-7i3q1kxaw",
+      "topic_id": "topic-7hfmabfx7",
+      "topic_name": "Withdraw Test",
+      "variations": {
+        "withdraw_type": {
+          "values": [
+            {
+              "value": 0
+            }
+          ],
+          "type": "double",
+          "value": 0,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7lhhmri7o": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rrhrhd83",
+      "topic_id": "topic-7lhhmri7o",
+      "topic_name": "Game Number Test",
+      "variations": {
+        "config_name": {
+          "values": [
+            {
+              "value": 76
+            }
+          ],
+          "type": "double",
+          "value": 76,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7qg0nkobp": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rpp6wu9w",
+      "topic_id": "topic-7qg0nkobp",
+      "topic_name": "New User Welfare",
+      "variations": {
+        "new_user_welfare_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7pggarp4y": {
+      "topic_type": "life_time",
+      "config_id": "rule-7phhmilxw",
+      "topic_id": "topic-7pggarp4y",
+      "topic_name": "Promotion Test",
+      "variations": {
+        "promotion_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "promotion_pic_type": {
+          "values": [
+            {
+              "value": 0
+            }
+          ],
+          "type": "double",
+          "value": 0,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7pwd5eelb": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rqy4j3f0",
+      "topic_id": "topic-7pwd5eelb",
+      "topic_name": "Notification Test",
+      "variations": {
+        "notification_interval": {
+          "values": [
+            {
+              "value": 3
+            }
+          ],
+          "type": "double",
+          "value": 3,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7hwrnn2ac": {
+      "topic_type": "life_time",
+      "config_id": "rule-7iqu23g1h",
+      "topic_id": "topic-7hwrnn2ac",
+      "topic_name": "Red Packet",
+      "variations": {
+        "red_packet_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "red_show"
+        },
+        {
+          "name": "red_open_click"
+        }
+      ]
+    },
+    "topic-7ryepo4jo": {
+      "topic_type": "life_time",
+      "config_id": "rule-7ryeqymkj",
+      "topic_id": "topic-7ryepo4jo",
+      "topic_name": "new_home",
+      "variations": {
+        "home_group": {
+          "values": [
+            {
+              "value": -1
+            }
+          ],
+          "type": "double",
+          "value": -1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7greokaxn": {
+      "topic_type": "life_time",
+      "config_id": "rule-7hr71m3ph",
+      "topic_id": "topic-7greokaxn",
+      "topic_name": "Interstitial Test",
+      "variations": {
+        "interval": {
+          "values": [
+            {
+              "value": 4999
+            }
+          ],
+          "type": "double",
+          "value": 4999,
+          "strategy": "sole"
+        },
+        "reward_nohp_count": {
+          "values": [
+            {
+              "value": 10000
+            }
+          ],
+          "type": "double",
+          "value": 10000,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7hfmc5kg8": {
+      "topic_type": "life_time",
+      "config_id": "rule-7hohdyzat",
+      "topic_id": "topic-7hfmc5kg8",
+      "topic_name": "Native Close",
+      "variations": {
+        "native_close": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "native_click"
+        },
+        {
+          "name": "native_close"
+        }
+      ]
+    },
+    "topic-7g0is8c8r": {
+      "topic_type": "life_time",
+      "config_id": "rule-7nny46iro",
+      "topic_id": "topic-7g0is8c8r",
+      "topic_name": "Judge",
+      "variations": {
+        "judge_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "difficulty": {
+          "values": [
+            {
+              "value": "2,2,2,1,2,2,2,1,2,2,2,1"
+            }
+          ],
+          "type": "string",
+          "value": "2,2,2,1,2,2,2,1,2,2,2,1",
+          "strategy": "sole"
+        },
+        "auto_fit_difficulty": {
+          "values": [
+            {
+              "value": "1=7,0,0,0,6,1,0,0,6,1,0,0;2=6,1,0,0,7,0,0,0,6,0,0,1;3=6,1,0,0,6,1,0,0,5,1,1,0;4=6,1,0,0,6,0,1,0,5,1,1,0;5=5,2,0,0,5,1,1,0,3,2,2,0;6=4,2,1,0,2,3,1,1,1,2,2,2;7=2,4,1,0,1,2,2,2,0,1,3,3"
+            }
+          ],
+          "type": "string",
+          "value": "1=7,0,0,0,6,1,0,0,6,1,0,0;2=6,1,0,0,7,0,0,0,6,0,0,1;3=6,1,0,0,6,1,0,0,5,1,1,0;4=6,1,0,0,6,0,1,0,5,1,1,0;5=5,2,0,0,5,1,1,0,3,2,2,0;6=4,2,1,0,2,3,1,1,1,2,2,2;7=2,4,1,0,1,2,2,2,0,1,3,3",
+          "strategy": "sole"
+        },
+        "auto_fit": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7jt6gjdkf": {
+      "topic_type": "life_time",
+      "config_id": "rule-7jt6nvfr6",
+      "topic_id": "topic-7jt6gjdkf",
+      "topic_name": "Phone Lottery",
+      "variations": {
+        "phone_lottery_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7rvmg5cdm": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rvmhsq8g",
+      "topic_id": "topic-7rvmg5cdm",
+      "topic_name": "game_ad_bonus",
+      "variations": {
+        "game_ad_bonus_switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7rr4qk1zg": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rr4rpsx1",
+      "topic_id": "topic-7rr4qk1zg",
+      "topic_name": "New User Value Test",
+      "variations": {
+        "new_user_value_switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "ecpm_average": {
+          "values": [
+            {
+              "value": 12
+            }
+          ],
+          "type": "double",
+          "value": 12,
+          "strategy": "sole"
+        },
+        "ecpm_recent": {
+          "values": [
+            {
+              "value": 30
+            }
+          ],
+          "type": "double",
+          "value": 30,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7hwwykemf": {
+      "topic_type": "life_time",
+      "config_id": "rule-7hwybxkdj",
+      "topic_id": "topic-7hwwykemf",
+      "topic_name": "Tree Video",
+      "variations": {
+        "tree_video_type": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "bt_home_tree"
+        }
+      ]
+    },
+    "topic-7rba6v0xx": {
+      "topic_type": "life_time",
+      "config_id": "rule-7rblvev6h",
+      "topic_id": "topic-7rba6v0xx",
+      "topic_name": "Condition Lottery",
+      "variations": {
+        "condition_lottery_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "lottery_strategy": {
+          "values": [
+            {
+              "value": "strategy1"
+            }
+          ],
+          "type": "string",
+          "value": "strategy1",
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7o6cgqyzu": {
+      "topic_type": "life_time",
+      "config_id": "rule-7o6cl6i9m",
+      "topic_id": "topic-7o6cgqyzu",
+      "topic_name": "Interstitial When Refuse Double",
+      "variations": {
+        "toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "interval": {
+          "values": [
+            {
+              "value": 120
+            }
+          ],
+          "type": "double",
+          "value": 120,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7nthvhe1i": {
+      "topic_type": "life_time",
+      "config_id": "rule-7phgr7etv",
+      "topic_id": "topic-7nthvhe1i",
+      "topic_name": "Story Line",
+      "variations": {
+        "toggle_story": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7p3qvy799": {
+      "topic_type": "life_time",
+      "config_id": "rule-7sft8y4u2",
+      "topic_id": "topic-7p3qvy799",
+      "topic_name": "new_guide",
+      "variations": {
+        "guide": {
+          "values": [
+            {
+              "value": 3
+            }
+          ],
+          "type": "double",
+          "value": 3,
+          "strategy": "sole"
+        },
+        "back": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7jm0elu5b": {
+      "topic_type": "life_time",
+      "config_id": "rule-7kbs0la84",
+      "topic_id": "topic-7jm0elu5b",
+      "topic_name": "New User Guide",
+      "variations": {
+        "others_guide_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "others_popup_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7f4wx7a0z": {
+      "topic_type": "life_time",
+      "config_id": "rule-7fw7ywd2y",
+      "topic_id": "topic-7f4wx7a0z",
+      "topic_name": "Pet Reward",
+      "variations": {
+        "pet_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "pet_reward_click"
+        }
+      ]
+    },
+    "topic-7suzthsil": {
+      "topic_type": "life_time",
+      "config_id": "rule-7suzup1n6",
+      "topic_id": "topic-7suzthsil",
+      "topic_name": "Daily Salary",
+      "variations": {
+        "daily_salary_switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7pw038dv9": {
+      "topic_type": "life_time",
+      "config_id": "rule-7pw0590pl",
+      "topic_id": "topic-7pw038dv9",
+      "topic_name": "Online Time",
+      "variations": {
+        "online_group": {
+          "values": [
+            {
+              "value": -1
+            }
+          ],
+          "type": "double",
+          "value": -1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7ontbxys1": {
+      "topic_type": "life_time",
+      "config_id": "rule-7sdz3xh1h",
+      "topic_id": "topic-7ontbxys1",
+      "topic_name": "Main Game Mode",
+      "variations": {
+        "difficulty_add": {
+          "values": [
+            {
+              "value": 9999
+            }
+          ],
+          "type": "double",
+          "value": 9999,
+          "strategy": "sole"
+        },
+        "clarify": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "initial": {
+          "values": [
+            {
+              "value": 2
+            }
+          ],
+          "type": "double",
+          "value": 2,
+          "strategy": "sole"
+        },
+        "difficulty_reduce": {
+          "values": [
+            {
+              "value": 9999
+            }
+          ],
+          "type": "double",
+          "value": 9999,
+          "strategy": "sole"
+        },
+        "threshold": {
+          "values": [
+            {
+              "value": 0
+            }
+          ],
+          "type": "double",
+          "value": 0,
+          "strategy": "sole"
+        },
+        "bubble": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7g8sf73p0": {
+      "topic_type": "life_time",
+      "config_id": "rule-7hy606hwu",
+      "topic_id": "topic-7g8sf73p0",
+      "topic_name": "Poetry",
+      "variations": {
+        "auto_fit_difficulty": {
+          "values": [
+            {
+              "value": "1=3,0,0,2,0,0,3,0,0;2=3,0,0,2,0,0,2,1,0;3=3,0,0,2,0,0,1,2,0;4=3,0,0,1,1,0,1,2,0;5=3,0,0,1,1,0,0,3,0"
+            }
+          ],
+          "type": "string",
+          "value": "1=3,0,0,2,0,0,3,0,0;2=3,0,0,2,0,0,2,1,0;3=3,0,0,2,0,0,1,2,0;4=3,0,0,1,1,0,1,2,0;5=3,0,0,1,1,0,0,3,0",
+          "strategy": "sole"
+        },
+        "difficulty": {
+          "values": [
+            {
+              "value": "3,0,0,2,0,0,1,2,0"
+            }
+          ],
+          "type": "string",
+          "value": "3,0,0,2,0,0,1,2,0",
+          "strategy": "sole"
+        },
+        "poetry_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "auto_fit": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "game_start_poem"
+        },
+        {
+          "name": "fail_reward_click_poem"
+        },
+        {
+          "name": "fail_reward_show_poem"
+        },
+        {
+          "name": "win_rewardpage_show_poem"
+        },
+        {
+          "name": "win_rewardpage_click_poem"
+        },
+        {
+          "name": "win_rewardcard_show_poem"
+        }
+      ]
+    },
+    "topic-7l65epbvj": {
+      "topic_type": "life_time",
+      "config_id": "rule-7l65fupov",
+      "topic_id": "topic-7l65epbvj",
+      "topic_name": "Board Toast",
+      "variations": {
+        "board_toast_switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7jamaa9ff": {
+      "topic_type": "life_time",
+      "config_id": "rule-7qnbigkk3",
+      "topic_id": "topic-7jamaa9ff",
+      "topic_name": "Withdraw Limit",
+      "variations": {
+        "withdraw_limit": {
+          "values": [
+            {
+              "value": 4
+            }
+          ],
+          "type": "double",
+          "value": 4,
+          "strategy": "sole"
+        },
+        "withdraw_page": {
+          "values": [
+            {
+              "value": "M"
+            }
+          ],
+          "type": "string",
+          "value": "M",
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7o1253iep": {
+      "topic_type": "life_time",
+      "config_id": "rule-7o125it9c",
+      "topic_id": "topic-7o1253iep",
+      "topic_name": "Coin Red Native",
+      "variations": {
+        "toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7l64uzw3i": {
+      "topic_type": "life_time",
+      "config_id": "rule-7sgtnzch3",
+      "topic_id": "topic-7l64uzw3i",
+      "topic_name": "Withdraw Prize",
+      "variations": {
+        "withdraw_prize_times": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        },
+        "withdraw_prize_number": {
+          "values": [
+            {
+              "value": "low"
+            }
+          ],
+          "type": "string",
+          "value": "low",
+          "strategy": "sole"
+        },
+        "withdraw_prize_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-rp-7etjhs5e4": {
+      "topic_type": "one_time",
+      "topic_name": "RTOT Popup",
+      "variations": {
+        "body": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "button1_text": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "title": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "start_time": {
+          "values": [
+            ""
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "button2_text": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "end_time": {
+          "values": [
+            ""
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "button1_url": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "button2_url": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "string",
+          "value": "",
+          "strategy": "sole"
+        },
+        "image": {
+          "values": [
+            {
+              "value": ""
+            }
+          ],
+          "type": "url",
+          "value": "",
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "show"
+        },
+        {
+          "name": "button1_click"
+        },
+        {
+          "name": "button2_click"
+        }
+      ],
+      "topic_id": "topic-rp-7etjhs5e4"
+    },
+    "topic-7i3qdujkk": {
+      "topic_type": "life_time",
+      "config_id": "rule-7l5xjqgck",
+      "topic_id": "topic-7i3qdujkk",
+      "topic_name": "Invite Test",
+      "variations": {
+        "invite_switch": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7m1dkimi8": {
+      "topic_type": "life_time",
+      "config_id": "rule-7o98n42pv",
+      "topic_id": "topic-7m1dkimi8",
+      "topic_name": "Operating_Activity",
+      "variations": {
+        "activity_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7sifw75c8": {
+      "topic_type": "life_time",
+      "config_id": "rule-7sig4dkrc",
+      "topic_id": "topic-7sifw75c8",
+      "topic_name": "Red Chat Group",
+      "variations": {
+        "ad_toggle_red_open": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "ad_toggle_game_page_show": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "ad_interstitial_interval": {
+          "values": [
+            {
+              "value": 60
+            }
+          ],
+          "type": "double",
+          "value": 60,
+          "strategy": "sole"
+        },
+        "ad_toggle_chat_page_show": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "free_red_num": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        },
+        "ad_toggle_game_win": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "red_chat_group_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        },
+        "show_video_directly": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7l5xggp2f": {
+      "topic_type": "life_time",
+      "config_id": "rule-7l5xiuj5j",
+      "topic_id": "topic-7l5xggp2f",
+      "topic_name": "Koi Test",
+      "variations": {
+        "koi_switch": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7gt5hqb4q": {
+      "topic_type": "life_time",
+      "config_id": "rule-7owg4vm0l",
+      "topic_id": "topic-7gt5hqb4q",
+      "topic_name": "Calendar",
+      "variations": {
+        "calendar_toggle": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        },
+        {
+          "name": "calendar_show"
+        },
+        {
+          "name": "calendar_click"
+        },
+        {
+          "name": "calendar_close"
+        }
+      ]
+    },
+    "topic-7h46jigj5": {
+      "topic_type": "life_time",
+      "config_id": "rule-7i4ao4dny",
+      "topic_id": "topic-7h46jigj5",
+      "topic_name": "bgm",
+      "variations": {
+        "judge": {
+          "values": [
+            {
+              "value": 2
+            }
+          ],
+          "type": "double",
+          "value": 2,
+          "strategy": "sole"
+        },
+        "main": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        },
+        "poetry": {
+          "values": [
+            {
+              "value": 2
+            }
+          ],
+          "type": "double",
+          "value": 2,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7qrgqrm06": {
+      "topic_type": "life_time",
+      "config_id": "rule-7sl27qian",
+      "topic_id": "topic-7qrgqrm06",
+      "topic_name": "Time Red Packet",
+      "variations": {
+        "time_red_toggle": {
+          "values": [
+            {
+              "value": false
+            }
+          ],
+          "type": "boolean",
+          "value": false,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    },
+    "topic-7kbr9x78c": {
+      "topic_type": "life_time",
+      "config_id": "rule-7lvvfqwoh",
+      "topic_id": "topic-7kbr9x78c",
+      "topic_name": "guess_optimize",
+      "variations": {
+        "guess_optimize_others": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "guess_optimize_words": {
+          "values": [
+            {
+              "value": true
+            }
+          ],
+          "type": "boolean",
+          "value": true,
+          "strategy": "sole"
+        },
+        "reward_guess_checkpoint": {
+          "values": [
+            {
+              "value": 1
+            }
+          ],
+          "type": "double",
+          "value": 1,
+          "strategy": "sole"
+        }
+      },
+      "events": [
+        {
+          "name": "test"
+        }
+      ]
+    }
+  }
+}
